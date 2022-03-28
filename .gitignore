@@ -1,6 +1,4 @@
 /design
-/images
-
-*.md
+/instructions
 
 .DS_Store
