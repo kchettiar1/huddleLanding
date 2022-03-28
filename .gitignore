@@ -1,0 +1,6 @@
+/design
+/images
+
+*.md
+
+.DS_Store
