@@ -12,6 +12,7 @@
   font-size: 11px;
   text-align: center;
   color: var(--body-text);
+  margin-block-end: 1rem;
 }
 .attribution a {
   color: lightyellow;
@@ -25,7 +26,6 @@ body {
   background-image: url(/images/bg-mobile.svg);
   background-repeat: no-repeat;
   background-position: top center;
-  max-width: 375px;
   margin-block-start: 3.5rem;
 }
 
@@ -62,7 +62,7 @@ body {
   padding: 0 3.7rem;
   line-height: 3rem;
   font-size: 1.8rem;
-  margin-block-end: 2.5rem;
+  margin-block-end: 3rem;
 }
 
 .hero-btn {
@@ -73,6 +73,7 @@ body {
   color: var(--violet);
   margin-block-end: 6.3rem;
   border: none;
+  box-shadow: 1px 1px 10px hsl(0, 0%, 0%, 0.5);
 }
 
 .hero-btn:hover {
@@ -88,6 +89,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-block-end: 4rem;
 }
 
 .icon {
@@ -106,3 +108,69 @@ body {
 }
 
 /* Desktop: 1440px */
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(/images/bg-desktop.svg);
+  }
+
+  .brand-img {
+    margin-inline-start: 8rem;
+    height: 5.5rem;
+    width: 21rem;
+  }
+
+  .hero-container {
+    margin: 0 7.9rem 9rem 7.9rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+  }
+
+  .hero {
+    margin-inline-start: 4.6rem;
+    padding: 0 1.5rem;
+  }
+
+  .hero-img {
+    width: 700px;
+  }
+
+  .hero-headline h1 {
+    margin-block-start: 5.2rem;
+    margin-block-end: 3rem;
+    padding: 0;
+    font-size: 3.8rem;
+    line-height: 5rem;
+    width: 46rem;
+  }
+
+  .hero-subtext {
+    padding: 0;
+  }
+
+  .hero-btn {
+    height: 5.5rem;
+    width: 20rem;
+    font-weight: 600;
+  }
+
+  .footer {
+    margin: 4rem 0 4rem 120rem;
+  }
+
+  .social-links {
+    width: 15.6rem;
+    height: 4.5rem;
+    margin-inline-start: 0;
+  }
+
+  .icon {
+    font-size: 2.3rem;
+    height: 4.3rem;
+    width: 4.3rem;
+  }
+
+  .attribution {
+    text-align: left;
+  }
+}
